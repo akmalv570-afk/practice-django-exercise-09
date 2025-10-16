@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="maqola w-[50%] mx-auto">
+        <h1 class="text-2xl text-gray-900 dark:text-black my-8 mt-30">{{post.title}}</h1>
+        <div class="text-xl">
+            {{post.content|safe}}
+        </div>
+    </div>
+    
+{% endblock content %}
